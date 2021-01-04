@@ -141,7 +141,6 @@
 #sec5 h2{
     color: #000;
     font-weight: bold;
-    margin-bottom: 50px;
 }
 #sec5 .inner::after{
     content: '';
@@ -162,16 +161,20 @@
     width: 100%;
 }
 /*********************sec6****************************/
-#sec6 .inner::after{}
+#sec6 .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 #sec6 ul>li{
-    display: inline-block;
-    box-sizing: border-box;
+    float: left;
     width: calc((100% - 25px)/6);
     height: 225px;
     overflow: hidden;
+    margin-right: 5px;
 }
 #sec6 ul>li.youtube{
-    width: calc((100% - 20px)/6*2 + 25px);
+    width: calc((100% - 25px)/6*2 + 25px);
 }
 #sec6 ul>li:hover{
     border: 2px solid #DA4C7A;
