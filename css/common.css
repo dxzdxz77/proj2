@@ -102,21 +102,18 @@ button{
 #header .top_icon .shopping img{
       width: 22px;
 }
-/*********아래로가는 화살표 만들기*********/
-#header .top_icon .language img{
-      width: 25px;
-      /*********/
-}
 #header .top_icon .language .list{
       position: absolute;
-      top: 49px;
-      right: 197px;
+      top: 35px;
+      right: 222px;
       width: 40px;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 15px;
       border: 1px solid #ccc;
+      border-top: none;
       background-color: #fff;
+      z-index: 9999999999;
       /*************************/display: none;
 }
 #header .top_icon .language .list:last-child{
@@ -124,6 +121,52 @@ button{
 }
 #header .top_icon .language .list img{
       padding-bottom: 10px;
+}
+
+#header .top_icon .language img{
+      width: 25px;
+      /*********/
+}
+/*********아래로가는 화살표 만들기*********/
+#header .top_icon .button_box button{
+      border: 0;
+      background: none;
+      text-indent: -999999px;
+      cursor: pointer;
+}
+#header .top_icon .ui_btn{
+      position: relative;
+      width: 25px;
+      height: 25px;
+      background: #8599B2;
+}
+#header .top_icon .ui_btn span{
+      position: absolute;
+      top: 8px;
+      left: calc(50% - 5px);
+}
+#header .top_icon .ui_btn span::before{
+      content: '';
+      display: block;
+      width: 0;
+      border: 5px solid #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+}
+#header .top_icon .ui_btn span::after{
+      content: '';
+      display: block;
+      width: 0;
+      border: 3px solid #8599B2;
+      position: absolute;
+      left: 2px;
+      top: 0;
+}
+#header .top_icon .ui_btn span::before, #header .top_icon .ui_btn span::after{
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
 }
 
 #header .top_icon .search img{
@@ -144,7 +187,7 @@ button{
 }
 /**********************************nav*********************************************/
 #nav{
-      margin-bottom: 300px;
+      height: 76px;
       position: relative;
 }
 #nav::after{
@@ -317,7 +360,54 @@ button{
       color : #DBDBDB;
       font-size: 0.9rem;
       font-weight: bold;
+      cursor: pointer;
 }
+/*화살표만들기*/
+#footer .button_box{
+      position: absolute;
+      top: 14px;
+      right: 100px;
+}
+#footer button{
+      border: 0;
+      text-indent: -999999px;
+      cursor: pointer;
+}
+#footer .ui_btn{
+      width: 30px;
+      height: 30px;
+      background-color: #011630;
+      position: relative;
+}
+#footer .ui_btn span{
+      position: absolute;
+      left: 9px;
+      top: 18px;
+}
+#footer .ui_btn span::before{
+      content: '';
+      display: block;
+      width:0;
+      border: 6px solid #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+}
+#footer .ui_btn span::after{
+      content: '';
+      display: block;
+      width:0;
+      border: 4px solid #011630;
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+}
+#footer .ui_btn span::before, #footer .ui_btn span::after{
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+}
+/**/
 #footer .sns{
       position: absolute;
       top: 80px;
