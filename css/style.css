@@ -67,30 +67,30 @@
 }
 #slide .main1{
     float: left;
-    width: 800px;
-    height: 1200px;
+    width: 41.666%;
+    /*width: 800px;*/
+    /*height: 1200px;*/
     margin: 0 80px;
 }
 #slide .main2{
     float: left;
-    width: 640px;
-    height: 960px;
+    width: calc((100% - 41.666% - 160px + 340px)/2);
+    /*width: 640px;*/
+    /*height: 960px;*/
     margin-left: -170px;
     transform: translate(0,120px);
     overflow: hidden;
 }
 #slide .main3{
     float: left;
-    width: 640px;
-    height: 960px;
+    width: calc((100% - 41.666% - 160px + 340px)/2);
+    /*width: 640px;*/
+    /*height: 960px;*/
     margin-right: -170px;
     transform: translate(0,120px);
     overflow: hidden;
 }
-#slide .main img{
-    width: 100%;
-}
-#slide .main3 img{
+#slide .main1 img, #slide .main2 img, #slide .main3 img{
     width: 100%;
 }
 #slide .main_txt{
@@ -116,6 +116,7 @@
     color: #132F53;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 #slide .b_button{
     position: absolute;
@@ -128,7 +129,11 @@
     border-radius: 50%;
     background-color: #E2CF78;
     transition: 0.5s;
+    cursor: pointer;
 }
+/*#slide .b_button.on{
+    background-color: #fff;
+}*/
 #slide .b_button:hover{
     background-color: #fff;
 }
@@ -148,7 +153,6 @@
 /*********************sec2****************************/
 #sec2{
     margin-top: 100px;
-    margin-bottom: 100px;
 }
 #sec2::after{
     content: '';
@@ -167,7 +171,7 @@
 }
 /*********************sec3****************************/
 #sec3{
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 146px;
     padding-top: 30px;
     background-color: #8e8e8e;
@@ -175,11 +179,12 @@
     height: 700px;
 }
 #sec3 h2{
-    transform: translate(0,-200px);
+    transform: translate(0,-225px);
 }
 /*********************sec4****************************/
 /*********************sec5****************************/
 #sec5{
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 #sec5 h2{
@@ -206,7 +211,7 @@
 }
 /*********************sec6****************************/
 #sec6{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 #sec6 .inner::after{
     content: '';
@@ -243,6 +248,9 @@
 }
 #sec6 li img{
     width: 100%;
+}
+#sec6 li:nth-child(2), #sec6 li:nth-child(4){
+    transform: translate(0,50px);
 }
 #sec6 .caption{
     position: absolute;

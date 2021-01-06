@@ -168,15 +168,25 @@ button{
       border-right-color: transparent;
       border-bottom-color: transparent;
 }
-
+/***************/
+#header .top_icon .search{
+      position: relative;
+}
 #header .top_icon .search img{
       width: 16px;
       margin-right: 80px;
       position: absolute;
       top:10px;
-      right: 8px;
+      right: -75px;
+      cursor: pointer;
 }
-#header .top_icon .search:before{
+#header .top_icon .search #search_txt{
+      width: 124px;
+      height: 20px;
+      border-radius: 20px;
+      border: none;
+}
+/*#header .top_icon .search:before{
       display: block;
       content: '';
       width: 124px;
@@ -184,7 +194,7 @@ button{
       background-color: #fff;
       border: none;
       border-radius: 20px;
-}
+}*/
 /**********************************nav*********************************************/
 #nav{
       height: 76px;
@@ -195,7 +205,7 @@ button{
       display: block;
       clear: both;
 }
-#nav .nav_line {
+/*#nav .nav_line {
       border-top: 1px solid #aaa;
       position: absolute;
       width: 100%;
@@ -203,7 +213,7 @@ button{
       font-size: 0.9rem;
       top: 75px;
       left: 0;
-  }
+  }*/
 #nav .inner{
       position: relative;
 }
@@ -250,9 +260,9 @@ button{
       height: 0px;
       opacity: 0;
       overflow: hidden;
-      border-left: 1px solid #ccc;
+      /*border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;*/
       box-sizing: border-box;
       background-color: #fff;
       text-align: center;

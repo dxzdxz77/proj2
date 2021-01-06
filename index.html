@@ -50,7 +50,12 @@
             <button class="ui_btn"><span></span></button>
           </div>
         </li>
-        <li class="search"><a href="#"><img src="images/magnifying_glass.png" alt="검색하기"></a></li>
+        <li class="search">
+          <form>
+          <input type="text" id="search_txt">
+        </form>
+          <a href="#"><img src="images/magnifying_glass.png" alt="검색하기"></a>
+        </li>
       </ul>
     </div>
     </div>
@@ -146,8 +151,10 @@
       <div class="main3"><img src="images/main3.jpg" alt="메인화면 이미지"></div>
       <p class="main_txt">Discovery's  Summer  Story</p>
       <p class="main_tit">SS21</p>
-      <p class="b_button"></p>
-      <p class="main_button">Going to see</p>      
+      <div class="main_btn_box">
+      <p class="b_button on"></p>
+      <p class="main_button">Going to see</p>  
+    </div>    
     </div>
   </section>
   <section id="sec1">
@@ -155,6 +162,7 @@
       <h2>TRAVEL WITH DISCOVERY.</h2>
       <section class="regular slider">
         <div>
+          <a href="#">
           <img src="images/trip1.jpg" alt="해외여행코디">
           <div class="trip_box">
           <p class="trip">Trip1</p>
@@ -162,8 +170,10 @@
           <p class="t_txt">우리들의 즐거운 여행과 추억<br> 
             발의 피로를 덜어줄 슈즈와 활동하기 편한 레깅스&아우터</p>
           </div>
+        </a>
         </div>
         <div>
+          <a href="#">
           <img src="images/trip2.jpg" alt="산책코디">
           <div class="trip_box">
           <p class="trip">Trip2</p>
@@ -171,8 +181,10 @@
           <p class="t_txt">기분전환을 위해 찾은 근교 카페<br>
             이곳에 어울리는 톡톡 튀는 컬러의 팬츠와 슈즈&티셔츠</p>
           </div>
+        </a>
         </div>
         <div>
+          <a href="#">
           <img src="images/trip3.jpg" alt="운동코디">
           <div class="trip_box">
           <p class="trip">Trip1</p>
@@ -180,8 +192,10 @@
           <p class="t_txt">함께하면 더 재미있는 운동<br> 
             러닝에 최적화 된 슈즈와 스타일리쉬한 레깅스&아우터</p>
           </div>
+        </a>
         </div>
         <div>
+          <a href="#">
           <img src="images/trip4.jpg" alt="캠핑코디">
           <div class="trip_box">
           <p class="trip">Trip1</p>
@@ -189,8 +203,10 @@
           <p class="t_txt">숲속 밤하늘의 별빛과 시원한 공기<br> 
             안정감 있는 슈즈와 통기성이 뛰어난 티셔츠&팬츠와 함께 </p>
           </div>
+        </a>
         </div>
         <div>
+          <a href="#">
           <img src="images/trip5.jpg" alt="놀이공원코디">
           <div class="trip_box">
           <p class="trip">Trip1</p>
@@ -198,8 +214,10 @@
           <p class="t_txt">동심으로 돌아가는 시간<br>
             신축성 좋은 디스커버리와 함께하는 신나는 하루</p>
           </div>
+        </a>
         </div>
         <div>
+          <a href="#">
           <img src="images/trip6.jpg" alt="바다여행코디">
           <div class="trip_box">
           <p class="trip">Trip1</p>
@@ -207,6 +225,7 @@
           <p class="t_txt">우연히 만난 바다와 바람<br>
             기능성 소재의 티셔츠&팬츠로 완벽한 휴식</p>
           </div>
+        </a>
         </div>
       </section>
     </div>
@@ -239,53 +258,65 @@
     <div class="inner">
       <h2>BEST ITEM.</h2>
       <section class="regular slider">
-        <div>
-          <img src="images/best1.jpg" alt="봄베이직로건맨투맨">
+        <div class="best_item">
+          <a href="#">
+            <img src="images/best1.jpg" alt="봄베이직로건맨투맨">
           <div class="product">
             <p class="pro_tit">봄 베이직 로건(LOGAN) 맨투맨</p>
             <p class="pro_txt">DMMT31041-LD(라벤더) / 봄</p>
             <p class="price">79,000원</p>
           </div>
+        </a>
         </div>
-        <div>
+        <div class="best_item">
+          <a href="#">
           <img src="images/best2.jpg" alt="봄 베이직 덴버(DENVER) 맨투맨">
           <div class="product">
             <p class="pro_tit">봄 베이직 덴버(DENVER) 맨투맨</p>
             <p class="pro_txt">DXMT33041-BL(코발트블루) / 봄</p>
             <p class="price">69,000원</p>
         </div>
+      </a>
         </div>
-        <div>
+        <div class="best_item">
+          <a href="#">
           <img src="images/best3.jpg" alt="여성 경량윈드쉴드 바람막이">
           <div class="product">
             <p class="pro_tit">여성 경량윈드쉴드 바람막이</p>
             <p class="pro_txt">DWWJ28041-LD(라벤더) / 봄</p>
             <p class="price">179,000원</p>
         </div>
-        </div>
+      </a>
+        </div class="best_item">
         <div>
+          <a href="#">
           <img src="images/best4.jpg" alt="버킷디워커 V2">
           <div class="product">
             <p class="pro_tit">버킷디워커 V2</p>
             <p class="pro_txt">DXSHA1011-WH(화이트) / 봄</p>
             <p class="price">139,000원</p>
         </div>
+      </a>
         </div>
-        <div>
+        <div class="best_item">
+          <a href="#">
           <img src="images/best5.jpg" alt="리버티 바람막이">
           <div class="product">
             <p class="pro_tit">리버티 바람막이</p>
             <p class="pro_txt">DMWJ21041-BL(딥블루) / 봄</p>
             <p class="price">179,000원</p>
         </div>
+      </a>
         </div>
-        <div>
+        <div class="best_item">
+          <a href="#">
           <img src="images/best6.jpg" alt="백면그래픽 맨투맨">
           <div class="product">
             <p class="pro_tit">백면그래픽 맨투맨</p>
             <p class="pro_txt">DXMT39041-MT(민트) / 봄</p>
             <p class="price">89,000원</p>
         </div>
+      </a>
         </div>
       </section>
     </div>
@@ -294,37 +325,45 @@
     <div class="inner">
       <h2>NEW.</h2>
       <section class="regular slider">
-        <div>
-          <img src="images/new1.png" alt="샌드라인3">
+        <div class="new">
+          <a href="#">
+          <img src="images/new1_off.jpg" alt="샌드라인3">
           <div class="product">
             <p class="pro_tit">샌드라인 3</p>
             <p class="pro_txt">DXSH70031-PK(핑크) / 여름</p>
             <p class="price">39,000원</p>
           </div>
+        </a>
         </div>
-        <div>
-          <img src="images/new2.jpg" alt="디스커버러그래픽반팔티셔츠">
+        <div class="new">
+          <a href="#">
+          <img src="images/new2_off.jpg" alt="디스커버러그래픽반팔티셔츠">
           <div class="product">
             <p class="pro_tit">디스커버러 그래픽 반팔티셔츠</p>
             <p class="pro_txt">DXRS85031-OW(오프화이트) / 여름</p>
             <p class="price">59,000원</p>
         </div>
+      </a>
         </div>
-        <div>
-          <img src="images/new3.png" alt="리플랙티브백로고오버핏반팔티셔츠">
+        <div class="new">
+          <a href="#">
+          <img src="images/new3_off.jpg" alt="리플랙티브백로고오버핏반팔티셔츠">
           <div class="product">
             <p class="pro_tit">리플렉티브 백로고 오버핏 반팔 티셔츠</p>
             <p class="pro_txt">DXRS8E031-MS(머스타드) / 여름</p>
             <p class="price">41,300원</p>
         </div>
+      </a>
         </div>
-        <div>
-          <img src="images/new4.png" alt="라이크에코메신저">
+        <div class="new">
+          <a href="#">
+          <img src="images/new4_off.jpg" alt="라이크에코메신저">
           <div class="product">
             <p class="pro_tit">LiKE ECO 메신저</p>
             <p class="pro_txt">DXMR32111-CR(크림) / 봄</p>
             <p class="price">79,000원</p>
         </div>
+      </a>
         </div>
       </section>
     </div>
