@@ -174,17 +174,20 @@ button{
 }
 #header .top_icon .search img{
       width: 16px;
-      margin-right: 80px;
+      /*margin-right: 80px;*/
       position: absolute;
       top:10px;
-      right: -75px;
+      right: 5px;
       cursor: pointer;
 }
 #header .top_icon .search #search_txt{
-      width: 124px;
+      width: 80px;
       height: 20px;
       border-radius: 20px;
       border: none;
+      color: #000;
+      padding-left: 10px;
+      padding-right: 25px;
 }
 /*#header .top_icon .search:before{
       display: block;
@@ -199,6 +202,7 @@ button{
 #nav{
       height: 76px;
       position: relative;
+      margin-bottom: 50px;
 }
 #nav::after{
       content: '';
@@ -361,6 +365,10 @@ button{
       float: left;
       margin-right: 30px;
 }
+#footer ul.call>li span{
+      color: #fff;
+      font-weight: bold;
+}
 /************************************************/
 #footer .f_right{}
 #footer .english{
@@ -388,6 +396,7 @@ button{
       height: 30px;
       background-color: #011630;
       position: relative;
+      transform: rotate(90deg);
 }
 #footer .ui_btn span{
       position: absolute;
@@ -458,4 +467,50 @@ button{
       color: #C2C2C2;
       font-size: 0.9rem;
       line-height: 1.7em;
+}
+/**********top_button*********/
+.footer_ui_btn:before{
+      margin: -4px 0 0 -8px;
+      border: 8px solid transparent;
+      border-top-color: #ccc;
+     
+}
+.footer_ui_btn:after{
+      margin: -4px 0 0 -4px;
+      border: 4px solid transparent;
+      border-top-color: #fff;
+}
+.footer_ui_btn{
+      display: block;
+      width:50px;height:50px;
+      text-indent: 11px;
+      font-size: 14.3px;
+      border: 1px solid #ddd;
+      background-color: #011630;
+      color: #888;border:none;
+      position: fixed;
+      right:10px;
+      bottom:70px;
+      text-indent: -99999px;
+}
+      
+.footer_ui_btn:before, .footer_ui_btn:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: calc(50% - 8px);
+      width: 0;
+      height: 0;
+      margin: -13px 0 0 -8px;
+      display: block;
+}
+.footer_ui_btn:before {
+      margin: -4px 0 0 -8px;
+      border: 8px solid transparent;
+      border-bottom-color: #fff;
+}
+.footer_ui_btn:after {
+      margin: 2px 0 0 -5px;
+      border: 5px solid transparent;
+      border-bottom-color: #011630;
 }

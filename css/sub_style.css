@@ -1,0 +1,186 @@
+/********************#sub1.html************************/
+
+/*********서브1------breadcrumb**********/
+#sub_1_1 .breadcrumb li{
+}
+/********************************/
+#sub_1 #sec1{
+    position: relative;
+    margin-bottom: 100px;
+}
+#sub_1 #sec1 img{
+    width: 100%;
+}
+#sub_1 #sec1 p{
+    position: absolute;
+    top: 35%;
+    right: 128px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+/************sec2***********/
+#sub_1 #sec2 .sub_inner{
+    position: relative;
+}
+/*#sub_1 #sec2 .sub_inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}hr로 대체함 div마다 클리어보스 필요해서*/
+#sub_1 #sec2 .yellow_box1{
+    width: calc(100% - 680px);
+    height: 100px;
+    background-color: #FFB900;
+    margin-bottom: 50px;
+}
+#sub_1 #sec2 .yellow_box1 .txt1{
+    position: absolute;
+    top:0;
+    right: 250px;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+    padding: 20px 0;
+    transition: 0.5s;
+}
+/*#sub_1 #sec2 .yellow_box1:hover .txt1{
+    right: 50%;
+}*/
+#sub_1 #sec2 .yellow_box2{
+    float: right;
+    width: calc(100% - 660px);
+    height: 100px;
+    background-color: #FFB900;
+    margin-bottom: 50px;
+}
+#sub_1 #sec2 .yellow_box2 .txt2{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+    padding: 20px 0;
+    transition: 0.5s;
+}
+#sub_1 #sec2 .yellow_box3{
+    width: calc(100% - 680px);
+    height: 100px;
+    background-color: #FFB900;
+    margin-bottom: 100px;
+}
+#sub_1 #sec2 .yellow_box3 .txt3{
+    position: absolute;
+    bottom: 106px;
+    right: 350px;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+    padding: 20px 0;
+    transition: 0.5s;
+}
+
+
+/*****************/
+.animation{animation: 1s ani_top;}
+@keyframes ani_top{
+    0%{opacity:0; transform:translate(0, 100px);}
+    100%{opacity:1; transform:translate(0, 0);}
+}
+#sec2 .animation{animation-delay: 3s;}
+#sub1_1 #sec1 .sub_inner{
+    position: relative;
+}
+#sub1_1 #sec1 .sub_inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*******서브1-1*******/
+#sub1_1 .breadcrumb > li{
+    font-size: 0.7rem;
+    display: inline-block;
+}
+#sub1_1 #sec1{
+    margin-bottom: 150px;
+}
+#sub1_1 #sec1 .border1{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    border: 20px solid #ccc;
+    width: 625px;
+    height: 625px;
+}
+#sub1_1 #sec1 .tit_img{
+    float: left;
+    /*border: 20px solid #ccc;*/
+    width: 625px;
+    height: 625px;
+    overflow: hidden;
+}
+#sub1_1 #sec1 .tit_img img{
+    width: 100%;
+}
+#sub1_1 #sec1 .tit_box{
+    float: right;
+    margin-top: 140px;
+}
+
+#sub1_1 #sec1 .tit{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #000;
+    line-height: 1em;
+}
+#sub1_1 #sec1 .txt{
+    color: #666;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+/*sec2*/
+#sub1_1 #sec2{
+    margin-bottom: 200px;
+}
+#sub1_1 #sec2 .sub_inner{
+    position: relative;
+}
+#sub1_1 #sec2 .border2{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    border: 20px solid #ccc;
+    width: 625px;
+    height: 625px;
+}
+#sub1_1 #sec2 .sub_inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sub1_1 #sec2 .tit_img2{
+    float: right;
+    width: 625px;
+    height: 625px;
+    overflow: hidden;
+}
+#sub1_1 #sec2 .tit_box{
+    float: left;
+    margin-top: 130px;
+}
+#sub1_1 #sec2 .tit{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #000;
+}
+#sub1_1 #sec2 .txt{
+    color: #666;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+/********************#sub2.html************************/
+

@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
+
+
+* {margin:0; padding:0;}
+
+html{
+      font-size: 16px;
+}
+body{
+      font-size:16px;
+      color:#6f6f6f;
+      font-family: 'Nanum Gothic', sans-serif;
+      font-weight: 400;
+}
+h2{
+      color:#000;
+      font-size: 2.5rem;
+      font-family: 'Quicksand', sans-serif;
+      margin-bottom: 50px;
+}
+ul, ol, li{
+      list-style-type:none;
+}
+img, fieldset{
+      border: none;
+      vertical-align: middle}
+hr {
+      clear: both;
+      border: none;
+}/*:after{clear:both;}*/
+a {
+      color: inherit;
+      text-decoration: none;
+      outline: 0;
+}
+table{
+      border-collapse:collapse
+}
+input, textarea, input::placeholder, input::placeholder {
+      color: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      vertical-align: middle;
+      outline: 0;
+}
+button{
+      outline:0;
+}
+
+.sound_only{
+      display: block;
+      text-indent: -999999999999px;
+      height: 0;
+}
+/********메인,서브 공통영역****************/
+#wrap{
+      width: 100%;
+      min-width: 1200px;
+      overflow: hidden;
+}
+.inner{
+      max-width: 1760px;
+      min-width: 1200px;
+      margin: 0 auto;
+}
+.sub_inner{
+      min-width:1024px;
+      max-width:1280px;
+      margin:0 auto;
+}
+/******************************header**************************************/
+#header #header_top{
+      width: 100%;
+      height: 35px;
+      background: #aaa;
+      position: relative;
+}
+#header #header_top:after{
+      content: '';
+      display: block;
+      clear: both;
+}
+#header .top_icon{
+      float: right;
+      color: #fff;
+      font-size: 0.8rem;
+}
+#header .top_icon li{
+      float: left;
+      margin-left: 10px;
+      padding-top: 8px;
+}
+#header .top_icon li.top_txt{
+      transform: translate(0,2px);
+}
+#header .top_icon .login img{
+      width: 18px;
+}
+#header .top_icon .shopping img{
+      width: 22px;
+}
+#header .top_icon .language .list{
+      position: absolute;
+      top: 35px;
+      right: 222px;
+      width: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: #fff;
+      z-index: 9999999999;
+      /*************************/display: none;
+}
+#header .top_icon .language .list:last-child{
+      padding-bottom: 0;
+}
+#header .top_icon .language .list img{
+      padding-bottom: 10px;
+}
+
+#header .top_icon .language img{
+      width: 25px;
+      /*********/
+}
+/*********아래로가는 화살표 만들기*********/
+#header .top_icon .button_box button{
+      border: 0;
+      background: none;
+      text-indent: -999999px;
+      cursor: pointer;
+}
+#header .top_icon .ui_btn{
+      position: relative;
+      width: 25px;
+      height: 25px;
+      background: #8599B2;
+}
+#header .top_icon .ui_btn span{
+      position: absolute;
+      top: 8px;
+      left: calc(50% - 5px);
+}
+#header .top_icon .ui_btn span::before{
+      content: '';
+      display: block;
+      width: 0;
+      border: 5px solid #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+}
+#header .top_icon .ui_btn span::after{
+      content: '';
+      display: block;
+      width: 0;
+      border: 3px solid #8599B2;
+      position: absolute;
+      left: 2px;
+      top: 0;
+}
+#header .top_icon .ui_btn span::before, #header .top_icon .ui_btn span::after{
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+}
+/***************/
+#header .top_icon .search{
+      position: relative;
+}
+#header .top_icon .search img{
+      width: 16px;
+      /*margin-right: 80px;*/
+      position: absolute;
+      top:10px;
+      right: 5px;
+      cursor: pointer;
+      filter: invert(35%) sepia(2%) saturate(7%) hue-rotate(318deg) brightness(92%) contrast(96%);
+}
+#header .top_icon .search #search_txt{
+      width: 80px;
+      height: 20px;
+      border-radius: 20px;
+      border: none;
+      color: #000;
+      padding-left: 10px;
+      padding-right: 25px;
+}
+/*#header .top_icon .search:before{
+      display: block;
+      content: '';
+      width: 124px;
+      height: 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 20px;
+}*/
+/**********************************nav*********************************************/
+#nav{
+      height: 76px;
+      position: relative;
+      margin-bottom: 50px;
+}
+#nav::after{
+      content: '';
+      display: block;
+      clear: both;
+}
+/*#nav .nav_line {
+      border-top: 1px solid #aaa;
+      position: absolute;
+      width: 100%;
+      height: 0;
+      font-size: 0.9rem;
+      top: 75px;
+      left: 0;
+  }*/
+#nav .inner{
+      position: relative;
+}
+#nav .depth1{
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      left: 0;
+      z-index: 99;
+}
+#nav .depth1>li>a:hover{
+      color: #aaa;
+}
+#nav .depth1 > li{
+      width: 9%;
+      float: left;
+}
+#nav .depth1 > li > a{
+      display: block;
+      background-color: #fff;
+      text-align: center;
+      color: #000;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding-top: 10px;
+      padding-bottom: 29px;
+      margin-top: 20px;
+      /*transform: translate(0,15px);*/
+}
+#nav .depth1 > li.logo>a{
+      margin-top: 10px;
+      padding: 0;
+}
+#nav .logo img{
+      width: 70%;
+}
+#nav .depth1 ul{
+      position: absolute;
+      top: 76px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      height: 0px;
+      opacity: 0;
+      overflow: hidden;
+      /*border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;*/
+      box-sizing: border-box;
+      background-color: #fff;
+      text-align: center;
+      line-height: 2em;
+      font-size: 0.9rem;
+}
+#nav .depth1 > li:hover ul{
+      height: 200px;
+      opacity: 1;
+}
+#nav .depth1 ul>li>a:hover{
+      font-weight: bold;
+}
+#nav .depth1 ul.nav_margin1{
+      margin-left: 10px;
+}
+#nav .depth1 ul.nav_margin2, #nav .depth1 ul.nav_margin3, #nav .depth1 ul.nav_margin4{
+      margin-left: 20px;
+}
+#nav .depth1 ul.nav_margin5{
+      margin-left: 5px;
+}
+#nav .depth1 ul.nav_margin6, #nav .depth1 ul.nav_margin7{
+      margin-left: 28px;
+}
+#nav .depth1 ul.nav_margin8{
+      margin-left: 34px;
+}
+
+/**********************************footer*********************************************/
+#footer{
+      background-color: #011630;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      position: relative;
+}
+#footer .inner{
+      content: '';
+      display: block;
+      clear: both;
+}
+#footer .w_logo{
+      width: 100px;
+      display: inline-block;
+}
+#footer .w_logo img{
+      width: 100%;
+}
+#footer .w_logo_txt{
+      color: #fff;
+      font-weight: bold;
+      display: inline-block;
+      transform: translate(0,9px);
+      margin-left: 20px;
+}
+#footer .f_left{
+      color: #E9E9E9;
+      font-size: 0.9rem;
+      font-weight: bold;
+}
+#footer .f_left::after{
+      content: '';
+      display: block;
+      clear: both;
+}
+#footer .f_left li{
+      float: left;
+      margin-top: 20px;
+      padding-right:10px;
+      border-right: 1px solid #E9E9E9;
+      margin-left: 10px;
+}
+#footer ul.f_left>li:last-child {
+      border: none;
+}
+#footer ul.f_left>li:first-child{
+      margin-left: 0;
+}
+#footer .adress{
+      margin-top: 20px;
+      color: #C2C2C2;
+      line-height: 1.2rem;
+      font-size: 0.8rem;
+}
+#footer ul.call{
+      font-size: 0.8rem;
+      margin-top: 20px;
+      color: #C2C2C2;
+}
+#footer ul.call::after{
+      content: '';
+      display: block;
+      clear: both;
+}
+#footer ul.call>li{
+      float: left;
+      margin-right: 30px;
+}
+#footer ul.call>li span{
+      color: #fff;
+      font-weight: bold;
+}
+/************************************************/
+#footer .f_right{}
+#footer .english{
+      position: absolute;
+      top:20px;
+      right: 170px;
+      color : #DBDBDB;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+}
+/*화살표만들기*/
+#footer .button_box{
+      position: absolute;
+      top: 14px;
+      right: 100px;
+}
+#footer button{
+      border: 0;
+      text-indent: -999999px;
+      cursor: pointer;
+}
+#footer .ui_btn{
+      width: 30px;
+      height: 30px;
+      background-color: #011630;
+      position: relative;
+      transform: rotate(90deg);
+}
+#footer .ui_btn span{
+      position: absolute;
+      left: 9px;
+      top: 18px;
+}
+#footer .ui_btn span::before{
+      content: '';
+      display: block;
+      width:0;
+      border: 6px solid #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+}
+#footer .ui_btn span::after{
+      content: '';
+      display: block;
+      width:0;
+      border: 4px solid #011630;
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+}
+#footer .ui_btn span::before, #footer .ui_btn span::after{
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+}
+/**/
+#footer .sns{
+      position: absolute;
+      top: 80px;
+      right: 230px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #E9E9E9;
+}
+#footer .sns_txt{
+      width: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 110px;
+      right: 235px;
+      line-height: 2rem;
+}
+#footer .sns_txt span{
+      color: #C2C2C2;
+      font-size: 0.8rem;
+      position: absolute;
+      margin-left: 5px;
+}
+#footer .sns_txt img{
+      width: 100%;
+}
+#footer .notic{
+      position: absolute;
+      top: 80px;
+      right: 325px;
+      color: #E9E9E9;
+      font-size: 0.9rem;
+      font-weight: bold;
+}
+#footer .notic_txt{
+      position: absolute;
+      top: 110px;
+      right: 320px;
+      color: #C2C2C2;
+      font-size: 0.9rem;
+      line-height: 1.7em;
+}
+/**********top_button*********/
+.footer_ui_btn:before{
+      margin: -4px 0 0 -8px;
+      border: 8px solid transparent;
+      border-top-color: #ccc;
+     
+}
+.footer_ui_btn:after{
+      margin: -4px 0 0 -4px;
+      border: 4px solid transparent;
+      border-top-color: #fff;
+}
+.footer_ui_btn{
+      display: block;
+      width:50px;height:50px;
+      text-indent: 11px;
+      font-size: 14.3px;
+      border: 1px solid #ddd;
+      background-color: #011630;
+      color: #888;border:none;
+      position: fixed;
+      right:10px;
+      bottom:70px;
+      text-indent: -99999px;
+}
+      
+.footer_ui_btn:before, .footer_ui_btn:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: calc(50% - 8px);
+      width: 0;
+      height: 0;
+      margin: -13px 0 0 -8px;
+      display: block;
+}
+.footer_ui_btn:before {
+      margin: -4px 0 0 -8px;
+      border: 8px solid transparent;
+      border-bottom-color: #fff;
+}
+.footer_ui_btn:after {
+      margin: 2px 0 0 -5px;
+      border: 5px solid transparent;
+      border-bottom-color: #011630;
+}
+
+
+
+

@@ -201,13 +201,13 @@
     display: none;
 }
 #sec2 .slick-prev{
-    left: 0;
+    left: -160px;
     top: 0;
     background: url(../images/S_prev.png) no-repeat;
     background-size: 80%;
 }
 #sec2 .slick-next{
-    left: 60px;
+    left: -100px;
     top: 0;
     background: url(../images/S_next.png) no-repeat;
     background-size: 80%;
@@ -224,6 +224,7 @@
     cursor: pointer;
 }
 #sec2 .life_r{
+    margin-right: -200px;
     float: right;
     width: calc(100% - 420px);
     box-sizing: border-box;
@@ -231,9 +232,12 @@
 }
 #sec2 .life_r img{
     width: 420px;
+    transform: translate(100px,200px);
+    transition: 0.5s;
 }
 #sec2 .life_r .slick-current img{
     width: 800px;
+    transform: translate(0,0px);
 }
 #sec2 .slick-track{
     display:table;
@@ -248,7 +252,7 @@
 }
 /****************sec3*********************************/
 #sec3 .regular{
-    transform: translate(0, -230px);
+    transform: translate(0, -430px);
 }
 #sec3 .slick-prev {
     left: 10px;
