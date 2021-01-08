@@ -1,0 +1,40 @@
+#sub_1 #sec1{
+    position: relative;
+}
+#sub_1 #sec1 img{
+    width: 100%;
+}
+#sub_1 #sec1 p{
+    position: absolute;
+    top: 35%;
+    right: 128px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+/************sec2***********/
+#sub_1 #sec2 .sub_inner{
+    position: relative;
+}
+#sub_1 #sec2 .sub_inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sub_1 #sec2 .yellow_box1{
+    /*position: absolute;
+    top: 0;*/
+    width: calc(100% - 800px);
+    height: 100px;
+    background-color: #FFB900;
+}
+#sub_1 #sec2 .p1{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+}
