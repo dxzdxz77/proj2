@@ -1,9 +1,67 @@
-/********************#sub1.html************************/
-
-/*********서브1------breadcrumb**********/
-#sub_1_1 .breadcrumb li{
+/***********breadcrumb*********/
+.bsa_content .breadcrumb_wrap{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
 }
-/********************************/
+.bsa_content .breadcrumb_wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.bsa_content .breadcrumb{
+    float: right;
+    margin-right: 68px;
+}
+.bsa_content .breadcrumb > li{
+    font-size: 0.7rem;
+    display: inline-block;
+}
+/*버튼*/
+.bsa_content .button_box{
+    transform: translate(0,-3px);
+}
+.bsa_content button{
+    border: 0;
+    text-indent: -999999px;
+}
+.bsa_content .ui_btn{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+    transform: rotate(90deg);
+}
+.bsa_content .ui_btn span{
+    position: absolute;
+    left: 9px;
+    top: 18px;
+}
+.bsa_content .ui_btn span::before{
+    content: '';
+    display: block;
+    width:0;
+    border: 6px solid #6f6f6f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.bsa_content .ui_btn span::after{
+    content: '';
+    display: block;
+    width:0;
+    border: 4px solid #fff;
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+}
+.bsa_content .ui_btn span::before, .bsa_content .ui_btn span::after{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+/**************/
+/********************#sub1.html************************/
 #sub_1 #sec1{
     position: relative;
     margin-bottom: 100px;
@@ -89,7 +147,7 @@
     0%{opacity:0; transform:translate(0, 100px);}
     100%{opacity:1; transform:translate(0, 0);}
 }
-#sec2 .animation{animation-delay: 3s;}
+#sec2 .animation{animation-delay: 2s;}
 #sub1_1 #sec1 .sub_inner{
     position: relative;
 }
@@ -99,10 +157,7 @@
     clear: both;
 }
 /*******서브1-1*******/
-#sub1_1 .breadcrumb > li{
-    font-size: 0.7rem;
-    display: inline-block;
-}
+
 #sub1_1 #sec1{
     margin-bottom: 150px;
 }
