@@ -46,4 +46,9 @@ if ($(document).scrollTop() >= $('#sec1').offset().top) {
   else{ $('.footer_ui_btn').fadeOut();
 }
 })//맨 위로 스크롤링
+
+setInterval(function(){
+  $(".blink").toggle();
+}, 750);//글자 깜박임
+
 })//jp end

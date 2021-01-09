@@ -222,6 +222,9 @@
     height: 625px;
     overflow: hidden;
 }
+#sub1_1 #sec2 .tit_img2 img{
+    width: 100%;
+}
 #sub1_1 #sec2 .tit_box{
     float: left;
     margin-top: 130px;

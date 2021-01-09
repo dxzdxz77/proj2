@@ -60,6 +60,7 @@ button{
       height: 0;
 }
 /********메인,서브 공통영역****************/
+
 #wrap{
       width: 100%;
       min-width: 1200px;
@@ -70,6 +71,7 @@ button{
       min-width: 1200px;
       margin: 0 auto;
 }
+
 
 /******************************header**************************************/
 #header #header_top{
@@ -235,6 +237,7 @@ button{
       width: 9%;
       float: left;
 }
+
 #nav .depth1 > li > a{
       display: block;
       background-color: #fff;
@@ -246,6 +249,9 @@ button{
       padding-bottom: 29px;
       margin-top: 20px;
       /*transform: translate(0,15px);*/
+}
+#nav .depth1 > li > a.emphasis{
+      color: #F8A82B;
 }
 #nav .depth1 > li.logo>a{
       margin-top: 10px;
