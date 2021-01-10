@@ -250,9 +250,13 @@ button{
       margin-top: 20px;
       /*transform: translate(0,15px);*/
 }
-#nav .depth1 > li > a.emphasis{
+#nav .depth1 > li:first-child a{
       color: #F8A82B;
 }
+/*child를 쓸때는 형제가 있는 아이들에게 줘야한다 li > a:first-child 이런거 안된다 a는 형제가 없기 때문에...*/
+/*#nav .depth1 > li > a.emphasis{
+      color: #F8A82B;
+}*/
 #nav .depth1 > li.logo>a{
       margin-top: 10px;
       padding: 0;
