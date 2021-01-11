@@ -68,8 +68,8 @@
 }
 #key_popup .close{
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    top: 70px;
+    right: 20px;
     width: 20px;
     height: 20px;
     background: url(../images/btn_popclose.gif) no-repeat;
