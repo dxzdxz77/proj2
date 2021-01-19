@@ -139,6 +139,7 @@
     height: auto;
     position: relative;
     margin-bottom: 130px;
+    overflow: hidden;
 }
 #slide:after{
     display: block;
@@ -173,6 +174,43 @@
 #slide .main1 img, #slide .main2 img, #slide .main3 img{
     width: 100%;
 }
+/*************************메인슬라이드 애니메이션**************************************/
+@keyframes img_scroll{
+    0%{
+        opacity: 10%;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+@keyframes img_scroll_down{
+    0%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(20%);
+    }
+}
+.ani{
+    opacity:0%;
+    transform: translateY(30%);
+    animation: img_scroll 2s forwards;
+}
+.ani_down{
+    opacity: 0%;
+    transform: translateY(0);
+    animation: img_scroll_down 2s forwards;
+}
+.ani1{
+    animation-delay: 0.4s;
+}
+.ani3{
+    animation-delay: 0.8s;
+}
+/*************************메인슬라이드 애니메이션**************************************/
 #slide .main_txt{
     position: absolute;
     bottom: 500px;
@@ -246,7 +284,7 @@
 #sec2 .life_l{
     float: left;
     width: 420px;
-    padding: 0 100px;
+    margin: 0 100px;
 }
 #sec2 .life_l img{
     width: 100%;

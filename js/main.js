@@ -18,17 +18,13 @@ $('#key_popup .close').click(function(){
     $('#key_popup').css({display:'none'});
 })//공지 팝업창 닫기
 
-/*$(document).ready(function() {
-var wd = $(window);
-$('#slide .paral').each(function(){
-  var bg = $(this);
-  wd.scroll(function(){
-    var yPos = -(wd.scrollTop() / 2); 
-      //나눠지는 숫자가 작을 수록 속도가 빠름
-    var coords = '50%' + yPos + 'px';
-    bg.css({backgroundPosition:coords});
-  });
-});//패럴*/
+$(window).scroll(function(){
+  if($(document).scrollTop() >= 200) {
+    $('.main > div img').addClass('ani_down');
+  }else{
+    $('.main > div img').removeClass('ani_down');
+  }
+})//scroll 메인화면 애니메이트
 
 $('.footer_ui_btn').click(function(event){
   event.preventDefault();

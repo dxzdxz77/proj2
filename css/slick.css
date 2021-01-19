@@ -225,14 +225,15 @@
 }
 #sec2 .life_r{
     margin-right: -200px;
+    padding-left: 80px;
     float: right;
     width: calc(100% - 420px);
     box-sizing: border-box;
-    padding-left: 80px;
 }
 #sec2 .life_r img{
     width: 420px;
     transform: translate(100px,200px);
+    /*transform: translate(-30%,200px);퍼센트로 주면 사이즈는 줄어드나 사진 겹침이 심해진다*/
     transition: 0.5s;
 }
 #sec2 .life_r .slick-current img{
